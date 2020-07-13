@@ -25,7 +25,7 @@ export function openPopup({ url, config }) {
             top: window.screenY + ((window.outerHeight - height) / 2.5),
             left: window.screenX + ((window.outerWidth - width) / 2)
         };
-        
+        console.log(url);
         const popup = window.open(url, '_blank', qs.stringify(options, ','));
 
         if (url === 'about:blank') {
@@ -60,6 +60,7 @@ export function pollPopup({ window, config, requestToken }) {
                         const hash = qs.parse(window.location.hash.substring(1).replace(/[\/$]/, ''));
                         const params = Object.assign({}, query, hash);
                         console.log(params);
+                        console.log(params.code);
                         //if (params.error) {
                             
                           //  reject({ error: params.error })
