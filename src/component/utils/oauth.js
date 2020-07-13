@@ -143,8 +143,8 @@ function exchangeAzureCodeForToken({ oauthData, config, window, interval, dispat
         //window.close();
         //resolve({ window: window, interval: interval, profile:"44444" });
        // console.log(params);
-        axios.post(accessTokenUrl, qs.stringify(params)).then((res)=>{
-            console.log(res);
+        //axios.post(accessTokenUrl, qs.stringify(params)).then((res)=>{
+            //console.log(res);
             //let accessToken = res.data.id_token;
             //var headers = { Authorization: 'Bearer ' + accessToken };
             // let userdata = {
@@ -178,7 +178,7 @@ function exchangeAzureCodeForToken({ oauthData, config, window, interval, dispat
             //     })
             // })
 
-        })
+     //   })
         // Step 1. Exchange authorization code for access token.
         // request.post({ url: accessTokenUrl, form: params, json: true }, function (err, response, token) {
         //     if (!token) {

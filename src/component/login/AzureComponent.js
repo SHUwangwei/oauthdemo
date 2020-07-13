@@ -32,9 +32,9 @@ let AzureComponent = createReactClass({
         //clientId={'298a5a83-79b5-4904-aa92-fcb9ebd26273'}
         clientId={'633fccb6-7fcd-42d5-9d6c-2797f18e57a8'}
         clientSecret={'tlNM0ywN6oWz4VQnL9jUmUDOG8TWHvwv/BKGJHoGaqY='}
-        redirectUri={'http://localhost:3000'}
+        //redirectUri={'http://localhost:3000'}
         //redirectUri = {"https://functionappauthtest-yizhou-1.azurewebsites.net/.auth/login/aad/callback"}
-        //redirectUri={"https://functionappauthtest-yizhou-1.azurewebsites.net/api/ADFuncClient"}
+        redirectUri={"https://functionappauthtest-yizhou-1.azurewebsites.net/api/ADFuncClient"}
         scope={['openid']}
         response_type={'id_token+code'}
         width={300}
